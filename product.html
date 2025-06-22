@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Products | Nivora Jewels</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffdf8;
+      color: #333;
+    }
+
+    nav {
+      background: #111;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-size: 1.5em;
+      color: gold;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5em;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3em 1em;
+      background: url('images/jewelry-banner.jpg') no-repeat center center/cover;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2em;
+      padding: 4em 2em;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-info {
+      padding: 1.5em;
+      text-align: center;
+    }
+
+    .product-info h3 {
+      margin: 0.5em 0;
+      font-size: 1.2em;
+    }
+
+    .product-info p {
+      margin: 0.5em 0;
+      color: #888;
+    }
+
+    .btn {
+      display: inline-block;
+      background: gold;
+      color: black;
+      padding: 0.6em 1.2em;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1em;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 2em 1em;
+      margin-top: 4em;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Nivora Jewels</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="review.HTML">Review</a></li>
+      <li><a href="contact.HTML">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Our Signature Collections</h1>
+    <p>Browse our handpicked jewelry crafted with precision & love</p>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="products">
+    <div class="product-card">
+      <img src="images/diamond ring 2.jpeg" alt="Diamond Ring">
+      <div class="product-info">
+        <h3>Diamond Ring</h3>
+        <p>45 Euro</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="images/gold Necklace.jpg" alt="Gold Necklace">
+      <div class="product-info">
+        <h3>Gold Necklace</h3>
+        <p>89 Euro</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="images/platinum bracelet.jpeg" alt="Platinum Bracelet">
+      <div class="product-info">
+        <h3>Platinum Bracelet</h3>
+        <p>65 Euro</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="images/earings.jpeg" alt="Emerald Earrings">
+      <div class="product-info">
+        <h3>Emerald Earrings</h3>
+        <p>₹37 Euro</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Nivora Jewels. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

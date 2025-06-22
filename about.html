@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Nivora Jewels</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <i class="fas fa-gem"></i> Nivora Jewels
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.HTML">Products</a></li>
+            <li><a href="review.HTML">Review</a></li>
+            <li><a href="contact.HTML">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menu-icon" onclick="menutoggle()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-row">
+        <div class="about-col-1">
+          <img src="images/Grey Beige Black Minimalist Fashion Photo Collage Facebook Cover (1).png" style="width: 100%; max-width: 1400px; display: block; margin: 0 auto;" alt="Jewelry Crafting" />
+        </div>
+        <div class="about-col-2">
+          <h1>About Nivora Jewels</h1>
+          <p>
+            At Nivora Jewels, we believe jewelry is more than just an accessory — it's a statement of identity, elegance, and emotion.
+            Founded with a vision to blend timeless artistry with modern sophistication, we craft each piece with precision and care.
+          </p>
+          <p>
+            Whether you're celebrating a milestone or simply embracing your daily beauty, our collections are designed to elevate every moment. From ethically sourced materials to impeccable craftsmanship, we stand by quality, trust, and authenticity.
+          </p>
+          <h3>Our Mission</h3>
+          <p>
+            To empower self-expression through affordable luxury and to be a part of your most cherished memories.
+          </p>
+          <a href="products.html" class="btn">Explore Our Collection</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Download our app for Android and iOS</p>
+          <div class="app-logo">
+            <img src="images/footer.webp" alt="App Logo" />
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <div class="logo">
+            Nivora Jewels <i class="fas fa-gem"></i>
+          </div>
+          <p>
+            Where elegance meets perfection. Designed with love, delivered with trust.
+          </p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>YouTube</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">© 2025 Nivora Jewels. All rights reserved.</p>
+    </div>
+  </div>
+
+  <!-- Toggle Script -->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle() {
+      MenuItems.style.maxHeight = MenuItems.style.maxHeight === "0px" ? "200px" : "0px";
+    }
+  </script>
+</body>
+</html>
